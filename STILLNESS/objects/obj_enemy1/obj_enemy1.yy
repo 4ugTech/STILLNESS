@@ -28,9 +28,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"aggro_dist","filters":[],"listItems":[],"multiselect":false,"name":"aggro_dist","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"slow_fire_rate","filters":[],"listItems":[],"multiselect":false,"name":"slow_fire_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"fast_fire_rate","filters":[],"listItems":[],"multiselect":false,"name":"fast_fire_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"aggro_dist","filters":[],"listItems":[],"multiselect":false,"name":"aggro_dist","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"slow_fire_rate","filters":[],"listItems":[],"multiselect":false,"name":"slow_fire_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"450","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"fast_fire_rate","filters":[],"listItems":[],"multiselect":false,"name":"fast_fire_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"45","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

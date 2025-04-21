@@ -4,5 +4,5 @@ if(obj_game_handler.player_still == true)
 }
 else
 {
-	speed = 4	
+	speed = 15	
 }

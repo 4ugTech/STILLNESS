@@ -41,6 +41,13 @@ else
 	vspeed = 0
 }
 
+if(distance_to_object(obj_enemy1) < melee_dist)
+{
+	if(keyboard_check_pressed(vk_space))
+	{
+		instance_destroy(instance_nearest(x, y, obj_enemy1))
+	}
+}
 
 //Normalize diagonal movement speed
 if (hspeed != 0 && vspeed != 0) 
@@ -50,3 +57,4 @@ if (hspeed != 0 && vspeed != 0)
 }
 
 image_angle = point_direction(x, y, mouse_x, mouse_y)
+

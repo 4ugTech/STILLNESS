@@ -9,3 +9,11 @@ if(instance_exists(obj_player))
 		player_still = false	
 	}
 }
+
+if(!instance_exists(obj_player))
+{
+	if(keyboard_check_pressed(vk_space))
+	{
+		room_restart()	
+	}
+}
