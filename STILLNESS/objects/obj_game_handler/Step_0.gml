@@ -19,7 +19,7 @@ if(instance_exists(obj_player))
 //}
 
 // win screen if all five enemies killed 
-if (room == Room1 && !instance_exists(obj_enemy1)) {
+if (room == Room1 && !instance_exists(watcher)) {
 	room_goto(rm_win_screen)
 }
 
@@ -28,3 +28,65 @@ if (room == Room1 && !instance_exists(obj_enemy1)) {
 if (room == Room1 && !instance_exists(obj_player)) {
 	room_goto(rm_death_screen)
 }
+
+//Trigger cutscene when player gets close to watcher
+if(instance_exists(player) && instance_exists(watcher))
+{
+	
+	var cam_w = camera_get_view_width(cam);
+	var cam_h = camera_get_view_height(cam);
+	
+	if(camera_state == 0 && point_distance(player.x, player.y, watcher.x, watcher.y) < watcher.aggro_dist && watcher.cutscene_happened == false)
+	{
+			watcher.cutscene_happened = true
+			camera_state = 1
+			alarm[1] = 120
+			alarm[0] = 600
+	}
+	
+	switch(camera_state)
+	{
+		case 0: 
+			break
+			
+		case 1:
+			cam_w = camera_get_view_width(cam);
+			cam_h = camera_get_view_height(cam);
+
+			var target_x = watcher.x - cam_w / 2
+			var target_y = watcher.y - cam_h / 2
+			
+			var new_x = lerp(camera_get_view_x(cam), target_x, 0.05)
+			var new_y = lerp(camera_get_view_y(cam), target_y, 0.05)
+			
+			camera_set_view_pos(cam, new_x, new_y)
+			break
+		
+		case 2:
+			target_x = player.x - cam_w / 2
+	        target_y = player.y - cam_h / 2
+			
+			new_x = lerp(camera_get_view_x(cam), target_x, 0.1)
+			new_y = lerp(camera_get_view_y(cam), target_y, 0.1)
+			
+	        camera_set_view_pos(cam, new_x, new_y)
+			
+			if(abs(camera_get_view_x(cam) - target_x) < 1 && abs(camera_get_view_y(cam) - target_y) < 1)
+            {
+                camera_state = 0
+                view_object[0] = player    // re-enable GM’s built-in follow
+            }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
