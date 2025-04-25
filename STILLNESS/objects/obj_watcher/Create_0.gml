@@ -4,7 +4,8 @@ still = false
 
 state = 0 //0 = idle; 1 = aggro; 2 = chasing
 
-cutscene_happened = false
+cutscene_started = false
+cutscene_done = false
 has_aggroed = false
 
 idle_anim_done = false

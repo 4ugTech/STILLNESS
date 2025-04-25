@@ -20,20 +20,23 @@ switch(state)
 	case 2:
 		if(instance_exists(obj_player))
 		{	
+			
 			direction = point_direction(x, y, obj_player.x, obj_player.y)
-			speed = 2
 			//change move speed depending on time slow
-			//if(obj_game_handler.player_still == true)
-			//{
-			//	speed = slow_speed
-			//	image_speed = 1/10
-			//}	
-			//else
-			//{
-			//	speed = fast_speed
-			//	image_speed = 1
-			//}
-			//}
+			if(cutscene_done)
+			{
+				if(obj_game_handler.player_still == true)
+				{
+					speed = slow_speed
+					image_speed = 1/10
+				}	
+				else
+				{
+					speed = fast_speed
+					image_speed = 1
+				}
+			}
+			
 		
 			//Face the player
 			if(dist_to_player > 5) //So that the image doesn't constantly flip back and forth when on top of player

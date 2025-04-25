@@ -75,6 +75,7 @@
     {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_skull","path":"sprites/spr_skull/spr_skull.yy",},},
+    {"id":{"name":"spr_temp_background","path":"sprites/spr_temp_background/spr_temp_background.yy",},},
     {"id":{"name":"spr_watcher_aggro","path":"sprites/spr_watcher_aggro/spr_watcher_aggro.yy",},},
     {"id":{"name":"spr_watcher_chase","path":"sprites/spr_watcher_chase/spr_watcher_chase.yy",},},
     {"id":{"name":"spr_watcher_idle","path":"sprites/spr_watcher_idle/spr_watcher_idle.yy",},},

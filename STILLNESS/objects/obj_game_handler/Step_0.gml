@@ -36,9 +36,9 @@ if(instance_exists(player) && instance_exists(watcher))
 	var cam_w = camera_get_view_width(cam);
 	var cam_h = camera_get_view_height(cam);
 	
-	if(camera_state == 0 && point_distance(player.x, player.y, watcher.x, watcher.y) < watcher.aggro_dist && watcher.cutscene_happened == false)
+	if(camera_state == 0 && point_distance(player.x, player.y, watcher.x, watcher.y) < watcher.aggro_dist && watcher.cutscene_started == false)
 	{
-			watcher.cutscene_happened = true
+			watcher.cutscene_started = true
 			camera_state = 1
 			alarm[1] = 120
 			alarm[0] = 600
