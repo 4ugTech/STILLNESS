@@ -7,13 +7,13 @@ if(obj_game_handler.camera_state != 1)
 		moving_left = false
 		hspeed = 0
 	}
-	else if(keyboard_check(ord("D")))
+	else if(keyboard_check(ord("D")) && !place_meeting(x + move_speed, y, [tilemap_lab1, tilemap_hopsital, tilemap_walls]))
 	{	
 		moving_right = true
 		moving_left = false
 		hspeed = move_speed	
 	}
-	else if(keyboard_check(ord("A")))
+	else if(keyboard_check(ord("A")) && !place_meeting(x - move_speed, y, [tilemap_lab1, tilemap_hopsital, tilemap_walls]))
 	{
 		moving_left = true
 		moving_right = false
@@ -29,11 +29,11 @@ if(obj_game_handler.camera_state != 1)
 	{
 		vspeed = 0
 	}
-	else if(keyboard_check(ord("W")))
+	else if(keyboard_check(ord("W")) && !place_meeting(x, y - move_speed, [tilemap_lab1, tilemap_hopsital, tilemap_walls]))
 	{
 		vspeed = -move_speed
 	}
-	else if(keyboard_check(ord("S")))
+	else if(keyboard_check(ord("S")) && !place_meeting(x, y + move_speed, [tilemap_lab1, tilemap_hopsital, tilemap_walls]))
 	{
 		vspeed = move_speed
 	}
@@ -58,6 +58,8 @@ if(obj_game_handler.camera_state != 1)
 	}
 
 	image_angle = point_direction(x, y, mouse_x, mouse_y)
+	
+	
 }
 else
 {
