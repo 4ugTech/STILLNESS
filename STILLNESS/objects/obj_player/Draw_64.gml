@@ -1,8 +1,45 @@
-// Draw battery indicator
+// Draw stamina indicator
 var bar_width = 150;
 var bar_height = 15;
 var x_pos = 20;
-var y_pos = 50; // Position below stamina bar if you implemented that
+var y_pos = 20;
+
+// Background
+draw_set_color(c_gray);
+draw_rectangle(x_pos, y_pos, x_pos + bar_width, y_pos + bar_height, false);
+
+// Stamina level
+var stamina_percent = stamina / max_stamina;
+var bar_fill = bar_width * stamina_percent;
+
+// Choose color based on stamina level
+if (stamina_percent > 0.6) {
+    draw_set_color(c_lime);
+} else if (stamina_percent > 0.3) {
+    draw_set_color(c_yellow);
+} else {
+    draw_set_color(c_red);
+}
+
+draw_rectangle(x_pos, y_pos, x_pos + bar_fill, y_pos + bar_height, false);
+
+// Outline
+draw_set_color(c_white);
+draw_rectangle(x_pos, y_pos, x_pos + bar_width, y_pos + bar_height, true);
+
+// Label
+draw_set_font(font_buttons);
+draw_set_color(c_white);
+draw_text(x_pos, y_pos - 20, "STAMINA");
+
+// Draw exhausted indicator if player is exhausted
+if (exhausted) {
+    draw_set_color(c_red);
+    draw_text(x_pos + bar_width + 10, y_pos, "EXHAUSTED!");
+}
+
+// Draw battery indicator
+y_pos = 60; // Position below stamina bar
 
 // Background
 draw_set_color(c_gray);
@@ -28,7 +65,7 @@ draw_set_color(c_white);
 draw_rectangle(x_pos, y_pos, x_pos + bar_width, y_pos + bar_height, true);
 
 // Label
-draw_set_font(font_buttons); // Use an appropriate font
+draw_set_font(font_buttons);
 draw_set_color(c_white);
 draw_text(x_pos, y_pos - 20, "BATTERY");
 

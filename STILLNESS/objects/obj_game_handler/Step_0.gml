@@ -10,13 +10,23 @@ if(instance_exists(obj_player))
 	}
 }
 
-//if(!instance_exists(obj_player))
-//{
-//	if(keyboard_check_pressed(vk_space))
-//	{
-//		room_restart()	
-//	}
-//}
+// Handle screen shake
+if (shake) {
+    shake_time -= 1;
+    
+    var cam_x = camera_get_view_x(cam);
+    var cam_y = camera_get_view_y(cam);
+    
+    // Apply random offset based on shake magnitude
+    if (shake_time > 0) {
+        var shake_x = random_range(-shake_magnitude, shake_magnitude);
+        var shake_y = random_range(-shake_magnitude, shake_magnitude);
+        camera_set_view_pos(cam, cam_x + shake_x, cam_y + shake_y);
+    } else {
+        // End shake
+        shake = false;
+    }
+}
 
 // win screen if all five enemies killed 
 if (room == Room1 && !instance_exists(watcher)) {
@@ -74,19 +84,7 @@ if(instance_exists(player) && instance_exists(watcher))
 			if(abs(camera_get_view_x(cam) - target_x) < 1 && abs(camera_get_view_y(cam) - target_y) < 1)
             {
                 camera_state = 0
-                view_object[0] = player    // re-enable GM’s built-in follow
+                view_object[0] = player    // re-enable GM's built-in follow
             }
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-

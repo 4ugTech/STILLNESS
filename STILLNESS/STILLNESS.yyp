@@ -75,6 +75,7 @@
     {"id":{"name":"scr_setup_alarm","path":"scripts/scr_setup_alarm/scr_setup_alarm.yy",},},
     {"id":{"name":"scr_slow_down","path":"scripts/scr_slow_down/scr_slow_down.yy",},},
     {"id":{"name":"scr_start_chase","path":"scripts/scr_start_chase/scr_start_chase.yy",},},
+    {"id":{"name":"scr_start_shake","path":"scripts/scr_start_shake/scr_start_shake.yy",},},
     {"id":{"name":"snd_btn_click","path":"sounds/snd_btn_click/snd_btn_click.yy",},},
     {"id":{"name":"snd_btn_hover","path":"sounds/snd_btn_hover/snd_btn_hover.yy",},},
     {"id":{"name":"snd_watcher_screech","path":"sounds/snd_watcher_screech/snd_watcher_screech.yy",},},
