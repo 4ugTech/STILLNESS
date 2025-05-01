@@ -1,0 +1,1 @@
+audio_play_sound(snd_background_main_menu, 0, true)
