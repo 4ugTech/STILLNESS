@@ -97,6 +97,7 @@
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
     {"id":{"name":"spr_note","path":"sprites/spr_note/spr_note.yy",},},
     {"id":{"name":"spr_player_holding","path":"sprites/spr_player_holding/spr_player_holding.yy",},},
+    {"id":{"name":"spr_player_holdings","path":"sprites/spr_player_holdings/spr_player_holdings.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_skull","path":"sprites/spr_skull/spr_skull.yy",},},
     {"id":{"name":"spr_temp_background","path":"sprites/spr_temp_background/spr_temp_background.yy",},},
