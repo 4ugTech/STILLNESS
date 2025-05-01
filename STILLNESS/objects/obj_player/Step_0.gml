@@ -72,11 +72,11 @@ if(obj_game_handler.camera_state != 1)
 		vspeed = 0
 	}
 	
-	if(distance_to_object(obj_enemy1) < melee_dist)
+	if(distance_to_object(obj_guard) < melee_dist)
 	{
 		if(keyboard_check_pressed(vk_space))
 		{
-			instance_destroy(instance_nearest(x, y, obj_enemy1))
+			instance_destroy(instance_nearest(x, y, obj_guard))
 		}
 	}
 	
