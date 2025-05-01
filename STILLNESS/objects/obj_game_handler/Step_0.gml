@@ -89,7 +89,3 @@ if(instance_exists(player) && instance_exists(watcher))
 	}
 }
 
-if(!audio_is_playing(snd_gameplay_music) && room != rm_main_menu)
-{
-	audio_play_sound(snd_gameplay_music, 1, 1)	
-}
