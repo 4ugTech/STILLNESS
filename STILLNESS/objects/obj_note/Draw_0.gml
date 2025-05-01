@@ -1,5 +1,6 @@
+draw_self();
+
 if (glow_alpha > 0) {
-	draw_self();
     draw_set_alpha(glow_alpha);
     draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, glow_color, glow_alpha);
     

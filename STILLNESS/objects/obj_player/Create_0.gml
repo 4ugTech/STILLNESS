@@ -18,6 +18,15 @@ stamina_regen_rate = 0.3;  // How quickly stamina regenerates while still
 exhausted = false;         // Flag for when player is out of stamina
 exhausted_speed_multiplier = 0.3; // Movement speed multiplier when exhausted
 
+if (room == rm_spawn) {
+	has_spawn_key = false;
+} else {
+	has_spawn_key = true;
+}
+
+// referenced in step event to prevent phasing
 tilemap_lab1 = layer_tilemap_get_id("Tiles_lab1")
 tilemap_hopsital = layer_tilemap_get_id("Tiles_hospital")
-tilemap_walls = layer_tilemap_get_id("Tiles_walls")
+tilemap_hopsital_alt = layer_tilemap_get_id("Tiles_hospital_alt")
+tilemap_wall1 = layer_tilemap_get_id("Tiles_wall1")
+
