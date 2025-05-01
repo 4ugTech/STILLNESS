@@ -88,6 +88,19 @@ if(obj_game_handler.camera_state != 1)
 	}
 	
 	image_angle = point_direction(x, y, mouse_x, mouse_y)
+	
+	if(flashlight_on)
+	{
+		sprite_index = spr_player_holding
+		image_xscale = 2/3
+		image_yscale = 2/3
+	}
+	else
+	{
+		sprite_index = spr_player	
+		image_xscale = 1
+		image_yscale = 1
+	}
 }
 else
 {
