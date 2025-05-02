@@ -57,6 +57,7 @@
     {"id":{"name":"obj_btn_quit","path":"objects/obj_btn_quit/obj_btn_quit.yy",},},
     {"id":{"name":"obj_btn_restart","path":"objects/obj_btn_restart/obj_btn_restart.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
+    {"id":{"name":"obj_credits_handler","path":"objects/obj_credits_handler/obj_credits_handler.yy",},},
     {"id":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},},
     {"id":{"name":"obj_end_title","path":"objects/obj_end_title/obj_end_title.yy",},},
     {"id":{"name":"obj_flashlight","path":"objects/obj_flashlight/obj_flashlight.yy",},},
@@ -74,6 +75,7 @@
     {"id":{"name":"obj_static_note","path":"objects/obj_static_note/obj_static_note.yy",},},
     {"id":{"name":"obj_syringe","path":"objects/obj_syringe/obj_syringe.yy",},},
     {"id":{"name":"obj_watcher","path":"objects/obj_watcher/obj_watcher.yy",},},
+    {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
     {"id":{"name":"rm_death_screen","path":"rooms/rm_death_screen/rm_death_screen.yy",},},
     {"id":{"name":"rm_hallway","path":"rooms/rm_hallway/rm_hallway.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
@@ -140,6 +142,7 @@
     {"roomId":{"name":"rm_room2","path":"rooms/rm_room2/rm_room2.yy",},},
     {"roomId":{"name":"rm_room3","path":"rooms/rm_room3/rm_room3.yy",},},
     {"roomId":{"name":"rm_room4","path":"rooms/rm_room4/rm_room4.yy",},},
+    {"roomId":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
