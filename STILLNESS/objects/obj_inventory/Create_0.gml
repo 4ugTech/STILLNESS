@@ -17,6 +17,13 @@ enum ItemType {
 // Initialize inventory slots (5 slots)
 inventory = array_create(5, ItemType.NONE);
 
+// Track item quantities (how many of each item type we have)
+item_quantities = ds_map_create();
+ds_map_add(item_quantities, ItemType.KEY, 0);
+ds_map_add(item_quantities, ItemType.FLASHLIGHT, 0);
+ds_map_add(item_quantities, ItemType.BATTERY, 0);
+ds_map_add(item_quantities, ItemType.SYRINGE, 0);
+
 // Item properties (display names, sprite index, etc.)
 item_properties = ds_map_create();
 
@@ -43,10 +50,19 @@ slot_y = room_height - slot_height - margin;
 // Add item to inventory
 // Returns true if added successfully, false if inventory is full
 add_item = function(item_type) {
-    // Look for an empty slot
+    // If item is already in inventory, just increase quantity
+    for (var i = 0; i < array_length(inventory); i++) {
+        if (inventory[i] == item_type) {
+            ds_map_set(item_quantities, item_type, ds_map_find_value(item_quantities, item_type) + 1);
+            return true;
+        }
+    }
+    
+    // If item is not in inventory yet, look for an empty slot
     for (var i = 0; i < array_length(inventory); i++) {
         if (inventory[i] == ItemType.NONE) {
             inventory[i] = item_type;
+            ds_map_set(item_quantities, item_type, 1); // First one of this item type
             // If this is the first item, select it
             if (i == 0 && selected_slot == 0) {
                 selected_slot = i;
@@ -61,8 +77,17 @@ add_item = function(item_type) {
 remove_item = function(item_type) {
     for (var i = 0; i < array_length(inventory); i++) {
         if (inventory[i] == item_type) {
-            inventory[i] = ItemType.NONE;
-            return true;
+            var quantity = ds_map_find_value(item_quantities, item_type);
+            if (quantity > 1) {
+                // Reduce quantity
+                ds_map_set(item_quantities, item_type, quantity - 1);
+                return true;
+            } else {
+                // Remove the item entirely
+                inventory[i] = ItemType.NONE;
+                ds_map_set(item_quantities, item_type, 0);
+                return true;
+            }
         }
     }
     return false; // Item not found
@@ -80,13 +105,7 @@ has_item = function(item_type) {
 
 // Get the number of a specific item in inventory
 count_item = function(item_type) {
-    var count = 0;
-    for (var i = 0; i < array_length(inventory); i++) {
-        if (inventory[i] == item_type) {
-            count++;
-        }
-    }
-    return count;
+    return ds_map_find_value(item_quantities, item_type);
 }
 
 // Use selected item
@@ -104,7 +123,7 @@ use_selected_item = function() {
             // Use battery to recharge flashlight
             if (obj_player.flashlight_battery < 100) {
                 obj_player.flashlight_battery = 100;
-                inventory[selected_slot] = ItemType.NONE; // Remove the battery after use
+                remove_item(ItemType.BATTERY); // Use the remove_item function
             }
             break;
             
@@ -113,7 +132,7 @@ use_selected_item = function() {
             if (obj_player.stamina < obj_player.max_stamina) {
                 obj_player.stamina = obj_player.max_stamina;
                 obj_player.exhausted = false;
-                inventory[selected_slot] = ItemType.NONE; // Remove the syringe after use
+                remove_item(ItemType.SYRINGE); // Use the remove_item function
             }
             break;
     }

@@ -53,13 +53,11 @@ for (var i = 0; i < array_length(inventory); i++) {
             );
         }
         
-        // If item is battery or syringe, draw a small number indicating quantity
-        if (inventory[i] == ItemType.BATTERY || inventory[i] == ItemType.SYRINGE) {
-            var count = count_item(inventory[i]);
-            if (count > 1) {
-                draw_set_color(c_white);
-                draw_text(slot_x + slot_width - 15, slot_y + slot_height - 15, string(count));
-            }
+        // Display quantity if more than 1
+        var count = ds_map_find_value(item_quantities, inventory[i]);
+        if (count > 1) {
+            draw_set_color(c_white);
+            draw_text(slot_x + slot_width - 15, slot_y + slot_height - 15, string(count));
         }
     }
 }
@@ -70,11 +68,12 @@ if (selected_item != ItemType.NONE) {
     var item_info = item_properties[? selected_item];
     var item_name = item_info[0];
     var item_desc = item_info[2];
+    var quantity = ds_map_find_value(item_quantities, selected_item);
     
     // Draw name and description above the inventory
     draw_set_color(c_white);
     draw_set_halign(fa_left);
-    draw_text(slot_start_x, slot_y - 40, item_name);
+    draw_text(slot_start_x, slot_y - 40, item_name + " (" + string(quantity) + ")");
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_text(slot_start_x, slot_y - 20, item_desc);
