@@ -5,6 +5,8 @@ moving_down = false
 
 player_still = false
 
+// Changed to false - player needs to find the flashlight first
+has_flashlight = false  
 flashlight_on = false;
 flashlight_battery = 100; // Battery percentage
 flashlight_drain_rate = 0.05; // How quickly battery drains
@@ -29,4 +31,3 @@ tilemap_lab1 = layer_tilemap_get_id("Tiles_lab1")
 tilemap_hopsital = layer_tilemap_get_id("Tiles_hospital")
 tilemap_hopsital_alt = layer_tilemap_get_id("Tiles_hospital_alt")
 tilemap_wall1 = layer_tilemap_get_id("Tiles_wall1")
-

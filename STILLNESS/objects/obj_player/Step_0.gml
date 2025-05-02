@@ -89,7 +89,8 @@ if(obj_game_handler.camera_state != 1)
 	
 	image_angle = point_direction(x, y, mouse_x, mouse_y)
 	
-	if(flashlight_on)
+	// Modified to check if player has flashlight
+	if(flashlight_on && has_flashlight)
 	{
 		sprite_index = spr_player_holding
 		image_xscale = 2/3
@@ -102,14 +103,16 @@ if(obj_game_handler.camera_state != 1)
 		image_yscale = 1
 	}
 	
-	// handle flashlight toggle
-    if(keyboard_check_pressed(ord("F"))) 
+	// Modified flashlight control - now handled by the inventory system
+	// Only allow toggling flashlight if player has one
+	if(keyboard_check_pressed(ord("F")) && has_flashlight) 
 	{
         flashlight_on = !flashlight_on;
 		audio_play_sound(snd_flashlight, 1, 0)
     }
-    // battery drain when on
-    if(flashlight_on) 
+	
+    // Battery drain when flashlight is on
+    if(flashlight_on && has_flashlight) 
 	{
         flashlight_battery -= flashlight_drain_rate;
         if (flashlight_battery <= 0) 
@@ -119,19 +122,22 @@ if(obj_game_handler.camera_state != 1)
         }
     }
 	
-	//pickup battery
+	//pickup battery - handled by inventory system now
 	if(instance_exists(obj_battery))
 	{
 		if(point_distance(x, y, obj_battery.x, obj_battery.y) < 20)
 		{
 			if(keyboard_check_pressed(ord("E")))
 			{
-				instance_destroy(instance_nearest(x, y, obj_battery))
-				flashlight_battery = 100
+				// Add to inventory instead of using immediately
+				if (instance_exists(obj_inventory)) {
+					if (obj_inventory.add_item(ItemType.BATTERY)) {
+						instance_destroy(instance_nearest(x, y, obj_battery));
+					}
+				}
 			}
 		}
 	}
-	
 }
 else
 {
