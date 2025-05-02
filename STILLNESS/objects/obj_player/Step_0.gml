@@ -101,6 +101,23 @@ if(obj_game_handler.camera_state != 1)
 		image_xscale = 1
 		image_yscale = 1
 	}
+	
+	// handle flashlight toggle
+    if(keyboard_check_pressed(ord("F"))) 
+	{
+        flashlight_on = !flashlight_on;
+		audio_play_sound(snd_flashlight, 1, 0)
+    }
+    // battery drain when on
+    if(flashlight_on) 
+	{
+        flashlight_battery -= flashlight_drain_rate;
+        if (flashlight_battery <= 0) 
+		{
+            flashlight_battery = 0;
+            flashlight_on = false;
+        }
+    }
 }
 else
 {
