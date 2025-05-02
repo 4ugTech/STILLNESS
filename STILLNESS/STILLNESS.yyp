@@ -74,6 +74,7 @@
     {"id":{"name":"obj_skull","path":"objects/obj_skull/obj_skull.yy",},},
     {"id":{"name":"obj_static_note","path":"objects/obj_static_note/obj_static_note.yy",},},
     {"id":{"name":"obj_syringe","path":"objects/obj_syringe/obj_syringe.yy",},},
+    {"id":{"name":"obj_tutorial_ui","path":"objects/obj_tutorial_ui/obj_tutorial_ui.yy",},},
     {"id":{"name":"obj_watcher","path":"objects/obj_watcher/obj_watcher.yy",},},
     {"id":{"name":"rm_credits","path":"rooms/rm_credits/rm_credits.yy",},},
     {"id":{"name":"rm_death_screen","path":"rooms/rm_death_screen/rm_death_screen.yy",},},
