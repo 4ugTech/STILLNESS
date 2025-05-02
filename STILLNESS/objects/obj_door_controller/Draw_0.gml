@@ -1,6 +1,6 @@
-var dist = point_distance(x, y, obj_player.x, obj_player.y);
-        
-if (dist <= interaction_radius) {
+var dist = point_distance(x, y, obj_player.x, obj_player.y)
+	
+	if (dist <= interaction_radius) {
 	// draw interaction prompt
 	draw_set_font(font_buttons);
 	draw_set_color(c_white);
@@ -24,4 +24,8 @@ if (dist <= interaction_radius) {
 		draw_text(x, y - 20, "Press E to open");
 	}
 }
+
+
+        
+
 	

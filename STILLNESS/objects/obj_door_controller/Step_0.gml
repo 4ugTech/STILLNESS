@@ -1,5 +1,5 @@
-var dist = point_distance(x, y, obj_player.x, obj_player.y);
-        
+var dist = point_distance(x, y, obj_player.x, obj_player.y)
+	
 if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
 	if (room == rm_spawn && next_room == rm_hallway && obj_player.has_spawn_key) {
 		obj_player.x = 1030
@@ -60,4 +60,12 @@ if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
 		obj_player.y = 915
 		room_goto(next_room)
 	}
+	
+	if (room == rm_hallway && next_room == rm_win_screen) {
+		global.show_hud = false
+		global.should_destroy_player = true;
+		
+		room_goto(next_room)
+	}
 } 
+        
