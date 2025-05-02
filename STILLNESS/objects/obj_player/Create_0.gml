@@ -11,7 +11,7 @@ flashlight_on = false;
 flashlight_battery = 100; // Battery percentage
 flashlight_drain_rate = 0.05; // How quickly battery drains
 flashlight_radius = 150; // How far the light reaches
-flashlight_angle = 30; // Width of the light cone
+flashlight_angle = 45; // Width of the light cone
 
 max_stamina = 100;
 stamina = max_stamina;

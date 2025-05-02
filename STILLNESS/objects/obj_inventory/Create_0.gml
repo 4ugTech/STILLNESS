@@ -1,3 +1,10 @@
+// Check if an instance already exists
+if (instance_number(obj_inventory) > 1) {
+    // If there's already an instance, destroy this one
+    instance_destroy();
+    exit;
+}
+
 // Initialize the inventory array
 enum ItemType {
     NONE,
@@ -28,8 +35,10 @@ selected_slot = 0;
 slot_width = 64;
 slot_height = 64;
 slot_padding = 10;
-slot_start_x = (room_width / 2) - ((slot_width + slot_padding) * 2.5);
-slot_y = room_height - slot_height - 20;
+// Bottom left positioning (actual position set in Draw GUI event)
+var margin = 20;
+slot_start_x = margin;
+slot_y = room_height - slot_height - margin;
 
 // Add item to inventory
 // Returns true if added successfully, false if inventory is full

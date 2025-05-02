@@ -8,6 +8,7 @@
   "instanceCreationOrder":[
     {"name":"inst_5FBF1B49","path":"rooms/rm_room3/rm_room3.yy",},
     {"name":"inst_6F189061","path":"rooms/rm_room3/rm_room3.yy",},
+    {"name":"inst_62D20F0C","path":"rooms/rm_room3/rm_room3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -16,6 +17,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"propertyId":{"name":"next_room","path":"objects/obj_door_controller/obj_door_controller.yy",},"resource":{"name":"rm_hallway","path":"rooms/rm_hallway/rm_hallway.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_hallway",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":634.0,},
         {"$GMRInstance":"v2","%Name":"inst_6F189061","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F189061","objectId":{"name":"obj_lighting_controller","path":"objects/obj_lighting_controller/obj_lighting_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":279.0,"y":595.0,},
+        {"$GMRInstance":"v2","%Name":"inst_62D20F0C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62D20F0C","objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":544.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_lab1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_lab1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           -169,-2147483648,-5,0,-2,-2147483648,-7,0,-106,-2147483648,-14,0,1,-2147483648,-5,0,-52,-2147483648,

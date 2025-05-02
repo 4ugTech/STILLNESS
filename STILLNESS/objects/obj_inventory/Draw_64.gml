@@ -1,3 +1,9 @@
+// Update UI properties on each draw to ensure correct positioning
+// Position inventory in bottom left corner with some margin
+var margin = 20;
+slot_start_x = margin;
+slot_y = display_get_gui_height() - slot_height - margin;
+
 // Draw the inventory UI at the bottom of the screen
 
 // Draw background for all slots
@@ -65,10 +71,11 @@ if (selected_item != ItemType.NONE) {
     var item_name = item_info[0];
     var item_desc = item_info[2];
     
-    // Draw name and description above the inventory bar
+    // Draw name and description above the inventory
     draw_set_color(c_white);
-    draw_set_halign(fa_center);
-    draw_text(room_width/2, slot_y - 40, item_name);
-    draw_set_halign(fa_center);
-    draw_text(room_width/2, slot_y - 20, item_desc);
+    draw_set_halign(fa_left);
+    draw_text(slot_start_x, slot_y - 40, item_name);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_text(slot_start_x, slot_y - 20, item_desc);
 }
