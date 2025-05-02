@@ -12,6 +12,7 @@
     {"name":"inst_82A6ADB","path":"rooms/rm_spawn/rm_spawn.yy",},
     {"name":"inst_50B559DB","path":"rooms/rm_spawn/rm_spawn.yy",},
     {"name":"inst_27524891","path":"rooms/rm_spawn/rm_spawn.yy",},
+    {"name":"inst_16007D01","path":"rooms/rm_spawn/rm_spawn.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,7 +24,8 @@
         {"$GMRInstance":"v2","%Name":"inst_50B559DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50B559DB","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"propertyId":{"name":"next_room","path":"objects/obj_door_controller/obj_door_controller.yy",},"resource":{"name":"rm_hallway","path":"rooms/rm_hallway/rm_hallway.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_hallway",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":743.0,},
-        {"$GMRInstance":"v2","%Name":"inst_27524891","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27524891","objectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":320.0,},
+        {"$GMRInstance":"v2","%Name":"inst_27524891","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27524891","objectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":320.0,},
+        {"$GMRInstance":"v2","%Name":"inst_16007D01","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16007D01","objectId":{"name":"obj_battery","path":"objects/obj_battery/obj_battery.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":256.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_hospital","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_hospital","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":85,"TileCompressedData":[
           -210,-2147483648,3,5,6,7,-82,-2147483648,3,21,22,23,-59,-2147483648,1,0,-82,-2147483648,-4,0,-81,-2147483648,

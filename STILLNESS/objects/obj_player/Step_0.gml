@@ -118,6 +118,20 @@ if(obj_game_handler.camera_state != 1)
             flashlight_on = false;
         }
     }
+	
+	//pickup battery
+	if(instance_exists(obj_battery))
+	{
+		if(point_distance(x, y, obj_battery.x, obj_battery.y) < 20)
+		{
+			if(keyboard_check_pressed(ord("E")))
+			{
+				instance_destroy(instance_nearest(x, y, obj_battery))
+				flashlight_battery = 100
+			}
+		}
+	}
+	
 }
 else
 {
