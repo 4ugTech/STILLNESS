@@ -4,15 +4,25 @@ if(obj_game_handler.camera_state != 1)
 	var was_exhausted = exhausted;
 	
 	if(hspeed != 0 || vspeed != 0) {
-		// Player is moving, drain stamina
-		stamina -= stamina_drain_rate;
-		if(stamina <= 0) {
-			stamina = 0;
-			exhausted = true;
-			
-			// Trigger screen shake when player first becomes exhausted
-			if (!was_exhausted && exhausted) {
-				start_shake(3, 15);
+		// Player is moving
+		if(!exhausted) {
+			// Only drain stamina if not exhausted
+			stamina -= stamina_drain_rate;
+			if(stamina <= 0) {
+				stamina = 0;
+				exhausted = true;
+				
+				// Trigger screen shake when player first becomes exhausted
+				if (!was_exhausted && exhausted) {
+					start_shake(3, 15);
+				}
+			}
+		} else {
+			// Player is exhausted but still moving - regenerate stamina
+			stamina += stamina_regen_rate;
+			if(stamina >= max_stamina) {
+				stamina = max_stamina;
+				exhausted = false;
 			}
 		}
 	} else {
@@ -121,23 +131,6 @@ if(obj_game_handler.camera_state != 1)
             flashlight_on = false;
         }
     }
-	
-	//pickup battery - handled by inventory system now
-	if(instance_exists(obj_battery))
-	{
-		if(point_distance(x, y, obj_battery.x, obj_battery.y) < 20)
-		{
-			if(keyboard_check_pressed(ord("E")))
-			{
-				// Add to inventory instead of using immediately
-				if (instance_exists(obj_inventory)) {
-					if (obj_inventory.add_item(ItemType.BATTERY)) {
-						instance_destroy(instance_nearest(x, y, obj_battery));
-					}
-				}
-			}
-		}
-	}
 }
 else
 {

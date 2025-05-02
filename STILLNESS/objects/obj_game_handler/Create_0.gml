@@ -12,3 +12,8 @@ shake = false
 shake_time = 0
 shake_magnitude = 0
 shake_fade = 0.25
+
+// Initialize collected items tracking
+if (!variable_global_exists("collected_items")) {
+    global.collected_items = ds_map_create();
+}

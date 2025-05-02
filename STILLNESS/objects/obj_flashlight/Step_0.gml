@@ -8,11 +8,29 @@ if (dist <= interaction_radius) {
         if (instance_exists(obj_inventory)) {
             if (obj_inventory.add_item(ItemType.FLASHLIGHT)) {
                 obj_player.has_flashlight = true;
+                
+                // Mark as collected in global map
+                if (!variable_global_exists("collected_items")) {
+                    global.collected_items = ds_map_create();
+                }
+                
+                var item_id = string(room_get_name(room)) + "_" + string(floor(x)) + "_" + string(floor(y));
+                ds_map_set(global.collected_items, item_id, true);
+                
                 instance_destroy();
             }
         } else {
             // Fallback if inventory doesn't exist
             obj_player.has_flashlight = true;
+            
+            // Mark as collected in global map
+            if (!variable_global_exists("collected_items")) {
+                global.collected_items = ds_map_create();
+            }
+            
+            var item_id = string(room_get_name(room)) + "_" + string(floor(x)) + "_" + string(floor(y));
+            ds_map_set(global.collected_items, item_id, true);
+            
             instance_destroy();
         }
     }

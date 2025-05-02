@@ -13,7 +13,7 @@ if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
             
             // Store the item as collected using a unique identifier (room + x + y position)
             var item_id = string(room_get_name(room)) + "_" + string(floor(x)) + "_" + string(floor(y));
-            ds_map_add(global.collected_items, item_id, true);
+            ds_map_set(global.collected_items, item_id, true);
             
             instance_destroy();
         }
@@ -26,7 +26,7 @@ if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
             global.collected_items = ds_map_create();
         }
         var item_id = string(room_get_name(room)) + "_" + string(floor(x)) + "_" + string(floor(y));
-        ds_map_add(global.collected_items, item_id, true);
+        ds_map_set(global.collected_items, item_id, true);
         
         instance_destroy();
     }
