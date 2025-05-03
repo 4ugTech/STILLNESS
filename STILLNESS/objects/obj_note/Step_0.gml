@@ -1,6 +1,26 @@
 if (!is_being_read) {
+    // Hide by default
+    visible = false;
+    
+    // Only show if within flashlight cone
+    if (instance_exists(obj_player) && obj_player.flashlight_on) {
+        // Calculate direction from player to this item
+        var dir_to_item = point_direction(obj_player.x, obj_player.y, x, y);
+        
+        // Calculate the difference between the flashlight direction and item direction
+        var angle_diff = angle_difference(obj_player.image_angle, dir_to_item);
+        
+        // Get the distance between player and item
+        var dist = point_distance(x, y, obj_player.x, obj_player.y);
+        
+        // Check if item is within the flashlight's cone and range
+        if (abs(angle_diff) <= obj_player.flashlight_angle && dist <= obj_player.flashlight_radius + 10) {
+            visible = true;
+        }
+    }
+    
     // check distance to player
-    if (instance_exists(obj_player)) {
+    if (instance_exists(obj_player) && visible) {
         var dist = point_distance(x, y, obj_player.x, obj_player.y);
         
         if (dist <= interaction_radius) {
@@ -18,8 +38,12 @@ if (!is_being_read) {
         } else {
             glow_alpha = 0;
         }
+    } else {
+        glow_alpha = 0;
     }
 } else {
+    visible = true; // Always show when being read
+    
     // note is being read - check for exit key
     if (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("E"))) {
         is_being_read = false;
