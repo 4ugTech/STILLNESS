@@ -58,6 +58,7 @@
     {"id":{"name":"obj_btn_restart","path":"objects/obj_btn_restart/obj_btn_restart.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_credits_handler","path":"objects/obj_credits_handler/obj_credits_handler.yy",},},
+    {"id":{"name":"obj_dialog_box","path":"objects/obj_dialog_box/obj_dialog_box.yy",},},
     {"id":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},},
     {"id":{"name":"obj_end_title","path":"objects/obj_end_title/obj_end_title.yy",},},
     {"id":{"name":"obj_flashlight","path":"objects/obj_flashlight/obj_flashlight.yy",},},
