@@ -11,3 +11,7 @@ has_aggroed = false
 idle_anim_done = false
 
 dist_to_player = point_distance(player.x, player.y, x, y)
+
+// For pause functionality
+prev_speed = 0
+prev_image_speed = 0

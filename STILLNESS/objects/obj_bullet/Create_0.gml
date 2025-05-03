@@ -4,3 +4,6 @@ if(instance_exists(obj_player))
 }
 
 speed = 15
+
+// For pause functionality
+prev_speed = 0

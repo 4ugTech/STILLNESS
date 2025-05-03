@@ -29,11 +29,16 @@ if (!is_being_read) {
             if (keyboard_check_pressed(ord("E"))) {
                 is_being_read = true;
                 
-                // pause game elements while reading
+                // Pause the game globally
+                if (instance_exists(obj_game_handler)) {
+                    obj_game_handler.game_paused = true;
+                }
+                
+                // Ensure player is stopped
                 with (obj_player) {
                     hspeed = 0;
                     vspeed = 0;
-                };
+                }
             }
         } else {
             glow_alpha = 0;
@@ -47,5 +52,10 @@ if (!is_being_read) {
     // note is being read - check for exit key
     if (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(ord("E"))) {
         is_being_read = false;
+        
+        // Unpause the game
+        if (instance_exists(obj_game_handler)) {
+            obj_game_handler.game_paused = false;
+        }
     }
 }

@@ -1,3 +1,24 @@
+// Pause handling
+if (instance_exists(obj_game_handler) && obj_game_handler.game_paused) {
+    // Remember current speed and image_speed
+    if (speed != 0) {
+        prev_speed = speed;
+        prev_image_speed = image_speed;
+        speed = 0;
+        image_speed = 0;
+    }
+    return; // Skip the rest of the step event
+} else {
+    // Restore previous speed if we were paused
+    if (variable_instance_exists(id, "prev_speed")) {
+        speed = prev_speed;
+        image_speed = prev_image_speed;
+        prev_speed = 0;
+        prev_image_speed = 0;
+    }
+}
+
+// Original step event code
 if(instance_exists(obj_player))
 {
 
@@ -37,4 +58,3 @@ if(instance_exists(obj_player))
 		speed = slow_speed
 	}
 }
-

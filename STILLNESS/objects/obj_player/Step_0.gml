@@ -122,15 +122,15 @@ if(obj_game_handler.camera_state != 1)
     }
 	
     // Battery drain when flashlight is on
-    if(flashlight_on && has_flashlight) 
+	if(flashlight_on && has_flashlight && !obj_game_handler.game_paused) 
 	{
-        flashlight_battery -= flashlight_drain_rate;
-        if (flashlight_battery <= 0) 
-		{
-            flashlight_battery = 0;
-            flashlight_on = false;
-        }
-    }
+	    flashlight_battery -= flashlight_drain_rate;
+	    if (flashlight_battery <= 0) 
+	    {
+	        flashlight_battery = 0;
+	        flashlight_on = false;
+	    }
+	}
 }
 else
 {
