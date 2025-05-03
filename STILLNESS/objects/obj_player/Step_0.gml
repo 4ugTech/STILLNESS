@@ -47,13 +47,13 @@ if(obj_game_handler.camera_state != 1)
 		moving_left = false
 		hspeed = 0
 	}
-	else if(keyboard_check(ord("D")) && !place_meeting(x + current_move_speed, y, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1]))
+	else if(keyboard_check(ord("D")) && !place_meeting(x + current_move_speed, y, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1, obj_monster_gurney]))
 	{	
 		moving_right = true
 		moving_left = false
 		hspeed = current_move_speed	
 	}
-	else if(keyboard_check(ord("A")) && !place_meeting(x - current_move_speed, y, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1]))
+	else if(keyboard_check(ord("A")) && !place_meeting(x - current_move_speed, y, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1, obj_monster_gurney]))
 	{
 		moving_left = true
 		moving_right = false
@@ -69,11 +69,11 @@ if(obj_game_handler.camera_state != 1)
 	{
 		vspeed = 0
 	}
-	else if(keyboard_check(ord("W")) && !place_meeting(x, y - current_move_speed, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1]))
+	else if(keyboard_check(ord("W")) && !place_meeting(x, y - current_move_speed, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1, obj_monster_gurney]))
 	{
 		vspeed = -current_move_speed
 	}
-	else if(keyboard_check(ord("S")) && !place_meeting(x, y + current_move_speed, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1]))
+	else if(keyboard_check(ord("S")) && !place_meeting(x, y + current_move_speed, [tilemap_lab1, tilemap_hopsital, tilemap_hopsital_alt, tilemap_wall1, obj_monster_gurney]))
 	{
 		vspeed = current_move_speed
 	}
