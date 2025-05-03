@@ -10,11 +10,11 @@
     {"name":"inst_6994E5A4","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_1713B749","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_401AE016","path":"rooms/rm_hallway/rm_hallway.yy",},
-    {"name":"inst_515A8DE0","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_6054FFD9","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_176F7E18","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_3CF087B","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_328902B5","path":"rooms/rm_hallway/rm_hallway.yy",},
+    {"name":"inst_4CA43A09","path":"rooms/rm_hallway/rm_hallway.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,9 +27,6 @@
         {"$GMRInstance":"v2","%Name":"inst_401AE016","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_401AE016","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"propertyId":{"name":"next_room","path":"objects/obj_door_controller/obj_door_controller.yy",},"resource":{"name":"rm_room1","path":"rooms/rm_room1/rm_room1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_room1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":55.0,},
-        {"$GMRInstance":"v2","%Name":"inst_515A8DE0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_515A8DE0","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"propertyId":{"name":"next_room","path":"objects/obj_door_controller/obj_door_controller.yy",},"resource":{"name":"rm_room2","path":"rooms/rm_room2/rm_room2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_room2",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":10.0,"y":514.0,},
         {"$GMRInstance":"v2","%Name":"inst_6054FFD9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6054FFD9","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"propertyId":{"name":"next_room","path":"objects/obj_door_controller/obj_door_controller.yy",},"resource":{"name":"rm_room3","path":"rooms/rm_room3/rm_room3.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_room3",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":129.0,"y":1066.0,},
@@ -40,6 +37,10 @@
         {"$GMRInstance":"v2","%Name":"inst_328902B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_328902B5","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_door_controller","path":"objects/obj_door_controller/obj_door_controller.yy",},"propertyId":{"name":"next_room","path":"objects/obj_door_controller/obj_door_controller.yy",},"resource":{"name":"rm_win_screen","path":"rooms/rm_win_screen/rm_win_screen.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_win_screen",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1770.0,"y":1068.0,},
+        {"$GMRInstance":"v2","%Name":"inst_4CA43A09","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CA43A09","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"propertyId":{"name":"note_content","path":"objects/obj_note/obj_note.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ATTENTION ALL SECURITY PERSONNEL:\\nDue to power grid failure, all electronic door systems are operating on backup generators. Colored keycards are required for each room access. Personnel found without proper clearance will be detained.\\nWARNING: Several test subjects have escaped containment. Exercise extreme caution when patrolling Areas 1-4. \\n There is an extra battery in the storage cabinet to the right!",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"propertyId":{"name":"note_title","path":"objects/obj_note/obj_note.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Security Memo",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":128.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_hospital","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_hospital","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           -7,-2147483648,-3,0,-53,-2147483648,-3,0,-61,-2147483648,-3,0,-53,-2147483648,-3,0,-62,-2147483648,1,
@@ -48,15 +49,15 @@
           -2147483648,1,88,-15,-2147483648,4,144,145,146,147,-69,-2147483648,1,255,-3,-2147483648,1,255,-26,-2147483648,
           1,104,-119,-2147483648,1,120,-119,-2147483648,1,136,-420,-2147483648,1,88,-119,-2147483648,1,104,-119,
           -2147483648,1,120,-119,-2147483648,1,136,-1177,-2147483648,2,41,42,-118,-2147483648,2,57,58,-118,-2147483648,
-          2,73,74,-586,-2147483648,2,1879048227,1879048243,-118,-2147483648,2,1879048226,1879048242,-118,-2147483648,
-          2,1879048225,1879048241,-360,-2147483648,2,41,42,-118,-2147483648,2,57,58,-118,-2147483648,2,73,74,-1568,
-          -2147483648,2,41,42,-49,-2147483648,-3,0,-66,-2147483648,2,57,58,-49,-2147483648,-3,0,-66,-2147483648,
-          2,73,74,-50,-2147483648,1,80,-118,-2147483648,3,33,34,35,-43,-2147483648,4,128,129,130,131,-61,-2147483648,
-          1,88,-7,-2147483648,5,239,49,50,51,239,-42,-2147483648,4,144,145,146,147,-61,-2147483648,1,104,-7,-2147483648,
-          1,255,-3,-2147483648,1,255,-107,-2147483648,2,120,167,-118,-2147483648,2,136,183,-284,-2147483648,1,
-          88,-119,-2147483648,1,104,-35,-2147483648,1,88,-83,-2147483648,1,120,-35,-2147483648,1,104,-83,-2147483648,
-          1,136,-34,-2147483648,2,167,120,-118,-2147483648,2,183,136,-110,-2147483648,3,33,34,35,-99,-2147483648,
-          4,1,2,34,3,-14,-2147483648,3,49,50,51,-99,-2147483648,4,1,18,50,3,-7,-2147483648,
+          2,73,74,-586,-2147483648,-2,0,-118,-2147483648,-2,0,-118,-2147483648,-2,0,-360,-2147483648,2,41,42,-118,
+          -2147483648,2,57,58,-118,-2147483648,2,73,74,-1568,-2147483648,2,41,42,-49,-2147483648,-3,0,-66,-2147483648,
+          2,57,58,-49,-2147483648,-3,0,-66,-2147483648,2,73,74,-50,-2147483648,1,80,-118,-2147483648,3,33,34,35,
+          -43,-2147483648,4,128,129,130,131,-61,-2147483648,1,88,-7,-2147483648,5,239,49,50,51,239,-42,-2147483648,
+          4,144,145,146,147,-61,-2147483648,1,104,-7,-2147483648,1,255,-3,-2147483648,1,255,-107,-2147483648,2,
+          120,167,-118,-2147483648,2,136,183,-284,-2147483648,1,88,-119,-2147483648,1,104,-35,-2147483648,1,88,
+          -83,-2147483648,1,120,-35,-2147483648,1,104,-83,-2147483648,1,136,-34,-2147483648,2,167,120,-118,-2147483648,
+          2,183,136,-110,-2147483648,3,33,34,35,-99,-2147483648,4,1,2,34,3,-14,-2147483648,3,49,50,51,-99,-2147483648,
+          4,1,18,50,3,-7,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tile_interior","path":"tilesets/tile_interior/tile_interior.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_wall1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_wall1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           1,277,-118,278,3,280,302,253,-116,328,364,252,305,302,305,170,171,171,172,171,172,171,172,171,172,171,

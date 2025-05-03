@@ -31,6 +31,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"dialog_title","filters":[],"listItems":[],"multiselect":false,"name":"dialog_title","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"dialog_text","filters":[],"listItems":[],"multiselect":false,"name":"dialog_text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"interaction_radius","filters":[],"listItems":[],"multiselect":false,"name":"interaction_radius","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -4,7 +4,7 @@ if (is_being_read) {
     
     // Draw dialog box background
     draw_set_alpha(1);
-    var margin = 100;
+    var margin = 50;
     draw_rectangle_color(margin, margin, display_get_gui_width() - margin, display_get_gui_height() - margin, c_dkgray, c_dkgray, c_dkgray, c_dkgray, false);
     draw_rectangle_color(margin + 5, margin + 5, display_get_gui_width() - margin - 5, display_get_gui_height() - margin - 5, c_gray, c_gray, c_gray, c_gray, false);
     

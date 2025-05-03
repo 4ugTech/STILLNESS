@@ -25,17 +25,6 @@ if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
 		room_goto(next_room)
 	}
 	
-	if (room == rm_hallway && next_room == rm_room2) {
-		obj_player.x = 1115
-		obj_player.y = 520
-		room_goto(next_room)
-	}
-	
-	if (room == rm_room2 && next_room == rm_hallway) {
-		obj_player.x = 50
-		obj_player.y = 518
-		room_goto(next_room)
-	}
 	
 	if (room == rm_hallway && next_room == rm_room3) {
 		obj_player.x = 120

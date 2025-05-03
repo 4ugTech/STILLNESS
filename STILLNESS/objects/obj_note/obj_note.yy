@@ -28,7 +28,10 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"note_title","filters":[],"listItems":[],"multiselect":false,"name":"note_title","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Dr. Gibson's Journal Entry","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"note_content","filters":[],"listItems":[],"multiselect":false,"name":"note_content","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Patient #47 - The temporal perception modification treatment appears to be working, though with unexpected side effects. \\n When the patient remains still, their perception of time slows significantly while maintaining cognitive function. \\n The power fluctuations are becoming more frequent. \\n I've instructed guards to escort all non-essential personnel from the facility. \\n If you're reading this, the situation has likely deteriorated further. You'll need to find a keycard to exit this room. \\n God help us all.","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
