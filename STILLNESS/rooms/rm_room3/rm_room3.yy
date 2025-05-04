@@ -13,6 +13,7 @@
     {"name":"inst_26877F22","path":"rooms/rm_room3/rm_room3.yy",},
     {"name":"inst_27AC4A58","path":"rooms/rm_room3/rm_room3.yy",},
     {"name":"inst_58D31C0A","path":"rooms/rm_room3/rm_room3.yy",},
+    {"name":"inst_343E8AA","path":"rooms/rm_room3/rm_room3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -22,6 +23,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":634.0,},
         {"$GMRInstance":"v2","%Name":"inst_6F189061","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6F189061","objectId":{"name":"obj_lighting_controller","path":"objects/obj_lighting_controller/obj_lighting_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":279.0,"y":595.0,},
         {"$GMRInstance":"v2","%Name":"inst_62D20F0C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62D20F0C","objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":544.0,},
+        {"$GMRInstance":"v2","%Name":"inst_343E8AA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_343E8AA","objectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":1024.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"instances_dark","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_86BB4C6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_86BB4C6","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"properties":[

@@ -14,6 +14,7 @@
     {"name":"inst_15C3AE64","path":"rooms/rm_room4/rm_room4.yy",},
     {"name":"inst_67DEB104","path":"rooms/rm_room4/rm_room4.yy",},
     {"name":"inst_7FC2ED54","path":"rooms/rm_room4/rm_room4.yy",},
+    {"name":"inst_5E440BA3","path":"rooms/rm_room4/rm_room4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,6 +24,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":1067.0,},
         {"$GMRInstance":"v2","%Name":"inst_3F291F2B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F291F2B","objectId":{"name":"obj_lighting_controller","path":"objects/obj_lighting_controller/obj_lighting_controller.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":245.0,"y":644.0,},
         {"$GMRInstance":"v2","%Name":"inst_FF6AF61","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_FF6AF61","objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":800.0,},
+        {"$GMRInstance":"v2","%Name":"inst_5E440BA3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5E440BA3","objectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":992.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"instances_dark","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_15C3AE64","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15C3AE64","objectId":{"name":"obj_dialog_box","path":"objects/obj_dialog_box/obj_dialog_box.yy",},"properties":[
