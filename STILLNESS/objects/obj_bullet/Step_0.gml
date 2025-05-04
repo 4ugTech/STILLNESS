@@ -21,7 +21,7 @@ if(obj_game_handler.player_still == true)
 }
 else
 {
-    speed = 8   
+    speed = 7   
 }
 
 // Check for collision with walls/tiles

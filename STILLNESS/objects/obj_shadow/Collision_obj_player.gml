@@ -1,3 +1,3 @@
 instance_destroy(other)
 
-game_restart()
+room_goto(rm_death_screen)
