@@ -10,6 +10,8 @@ if(instance_exists(obj_player))
 	}
 }
 
+
+
 // Handle screen shake
 if (shake) {
     shake_time -= 1;
