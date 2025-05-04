@@ -11,7 +11,11 @@ enum ItemType {
     KEY,
     FLASHLIGHT,
     BATTERY,
-    SYRINGE
+    SYRINGE,
+    KEY_GREEN,
+    KEY_RED,
+    KEY_YELLOW,
+    KEY_BLACK
 }
 
 // Initialize inventory slots (5 slots)
@@ -23,6 +27,10 @@ ds_map_add(item_quantities, ItemType.KEY, 0);
 ds_map_add(item_quantities, ItemType.FLASHLIGHT, 0);
 ds_map_add(item_quantities, ItemType.BATTERY, 0);
 ds_map_add(item_quantities, ItemType.SYRINGE, 0);
+ds_map_add(item_quantities, ItemType.KEY_GREEN, 0);
+ds_map_add(item_quantities, ItemType.KEY_RED, 0);
+ds_map_add(item_quantities, ItemType.KEY_YELLOW, 0);
+ds_map_add(item_quantities, ItemType.KEY_BLACK, 0);
 
 // Item properties (display names, sprite index, etc.)
 item_properties = ds_map_create();
@@ -34,6 +42,10 @@ item_properties[? ItemType.KEY] = ["Keycard", spr_key, "A keycard that opens doo
 item_properties[? ItemType.FLASHLIGHT] = ["Flashlight", spr_flashlight, "Helps you see in the dark"];
 item_properties[? ItemType.BATTERY] = ["Battery", spr_battery, "Recharges your flashlight"];
 item_properties[? ItemType.SYRINGE] = ["Adrenaline", spr_syringe, "Instantly restores stamina"];
+item_properties[? ItemType.KEY_GREEN] = ["Green Keycard", spr_keycard_green, "Access to North West Wing"];
+item_properties[? ItemType.KEY_RED] = ["Red Keycard", spr_keycard_red, "Access to South West Wing"];
+item_properties[? ItemType.KEY_YELLOW] = ["Yellow Keycard", spr_keycard_yellow, "Access to South East Wing "];
+item_properties[? ItemType.KEY_BLACK] = ["Black Keycard", spr_keycard_black, "Access to Exit Door"];
 
 // Currently selected slot
 selected_slot = 0;
@@ -135,5 +147,7 @@ use_selected_item = function() {
                 remove_item(ItemType.SYRINGE); // Use the remove_item function
             }
             break;
+            
+        // Note: Keycards are used automatically when interacting with doors
     }
 }

@@ -15,6 +15,7 @@
     {"name":"inst_3CF087B","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_328902B5","path":"rooms/rm_hallway/rm_hallway.yy",},
     {"name":"inst_4CA43A09","path":"rooms/rm_hallway/rm_hallway.yy",},
+    {"name":"inst_12AFEE99","path":"rooms/rm_hallway/rm_hallway.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -40,9 +41,11 @@
         {"$GMRInstance":"v2","%Name":"inst_4CA43A09","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CA43A09","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"propertyId":{"name":"note_content","path":"objects/obj_note/obj_note.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"ATTENTION ALL SECURITY PERSONNEL:\\nDue to power grid failure, all electronic door systems are operating on backup generators. Colored keycards are required for each room access. Personnel found without proper clearance will be detained.\\nWARNING: Several test subjects have escaped containment. Exercise extreme caution when patrolling Areas 1-4. \\n There is an extra battery in the storage cabinet to the right!",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"propertyId":{"name":"note_title","path":"objects/obj_note/obj_note.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Security Memo",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":128.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":1088.0,"y":160.0,},
+        {"$GMRInstance":"v2","%Name":"inst_12AFEE99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12AFEE99","objectId":{"name":"obj_syringe","path":"objects/obj_syringe/obj_syringe.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-35.418137,"scaleX":0.3,"scaleY":0.3,"x":1768.0,"y":55.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"Tiles_hospital","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_hospital","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
+    {"$GMRInstanceLayer":"","%Name":"instances_dark","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"instances_dark","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRTileLayer":"","%Name":"Tiles_hospital","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_hospital","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           -7,-2147483648,-3,0,-53,-2147483648,-3,0,-61,-2147483648,-3,0,-53,-2147483648,-3,0,-62,-2147483648,1,
           64,-55,-2147483648,1,82,-58,-2147483648,7,128,129,130,131,33,34,35,-53,-2147483648,3,33,34,35,-43,-2147483648,
           4,128,129,130,131,-10,-2147483648,7,144,145,146,147,49,50,51,-52,-2147483648,5,239,49,50,51,239,-26,
@@ -59,7 +62,7 @@
           2,183,136,-110,-2147483648,3,33,34,35,-99,-2147483648,4,1,2,34,3,-14,-2147483648,3,49,50,51,-99,-2147483648,
           4,1,18,50,3,-7,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tile_interior","path":"tilesets/tile_interior/tile_interior.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tiles_wall1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_wall1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"Tiles_wall1","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_wall1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           1,277,-118,278,3,280,302,253,-116,328,364,252,305,302,305,170,171,171,172,171,172,171,172,171,172,171,
           172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,
           171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,172,171,
@@ -117,7 +120,7 @@
           4,302,305,302,305,-116,-2147483648,4,302,305,302,305,-116,-2147483648,4,302,305,302,228,-116,278,3,227,
           305,327,-118,328,1,330,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tile_wall1","path":"tilesets/tile_wall1/tile_wall1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRTileLayer":"","%Name":"Tiles_wall2","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_wall2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
+    {"$GMRTileLayer":"","%Name":"Tiles_wall2","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_wall2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           -251,0,4,64,65,66,67,-34,0,4,64,65,66,67,-225,0,4,72,73,74,75,-46,0,4,72,73,74,75,-30,0,-118,8,-2,0,
           -6,8,1,9,-55,8,1,9,-52,8,5,9,8,8,0,0,-24,8,1,9,-93,8,-2,0,-48,8,1,9,-22,8,1,9,-46,8,-2,0,-118,8,-2,0,
           -118,8,-2,0,-102,8,1,9,-15,8,-2,0,-35,8,1,9,-48,8,1,9,-33,8,-2,0,-118,8,-2,0,-118,8,-2,0,-8,8,1,9,-3,
@@ -130,7 +133,7 @@
           73,74,75,-28,0,-118,8,-2,0,-62,8,1,9,-55,8,-2,0,-27,8,1,9,-90,8,-2,0,-118,8,-2,0,-118,8,-2,0,-45,8,1,
           9,-72,8,-2,0,-118,8,-2,0,-76,8,1,9,-41,8,-2,0,-6,8,1,9,-111,8,-2,0,-118,8,-240,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tile_wall2","path":"tilesets/tile_wall2/tile_wall2.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rm_hallway",
   "parent":{
