@@ -12,8 +12,8 @@ if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
     var can_open = false;
     var keycard_used = ItemType.NONE;
     
-    // Check if door was previously opened
-    if (ds_map_exists(global.opened_doors, door_id) && ds_map_find_value(global.opened_doors, door_id)) {
+    // Check if door was previously opened first
+    if (ds_map_exists(global.opened_doors, door_id) && ds_map_find_value(global.opened_doors, door_id) == true) {
         can_open = true;
     }
     // Otherwise check access requirements
@@ -143,15 +143,15 @@ if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
 
 // Add text prompt to guide the player
 if (dist <= interaction_radius) {
-    // Determine what message to show
+    // Default text
     var door_text = "Press E to open";
     
-    // If door has been opened before, always show "Press E to open"
-    if (!ds_map_exists(global.opened_doors, door_id) || !ds_map_find_value(global.opened_doors, door_id)) {
-        // Door hasn't been opened yet, check if keycard is needed
+    // If the door was previously opened, it's always "Press E to open"
+    if (!ds_map_exists(global.opened_doors, door_id) || ds_map_find_value(global.opened_doors, door_id) != true) {
+        // Only check for locks if the door hasn't been opened before
         if (room == rm_spawn && next_room == rm_hallway) {
             if (!obj_player.has_spawn_key && !(instance_exists(obj_inventory) && obj_inventory.has_item(ItemType.KEY))) {
-                door_text = "Locked! Needs Keycard";
+                door_text = "Locked! Needs Key";
             }
         }
         else if (room == rm_hallway && next_room == rm_room1) {

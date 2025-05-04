@@ -6,10 +6,7 @@
   ],
   "managed":true,
   "name":"obj_keycard_black",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_keycard","path":"objects/obj_keycard/obj_keycard.yy",},"propertyId":{"name":"sprite_dark","path":"objects/obj_keycard/obj_keycard.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_keycard_black_dark",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_keycard","path":"objects/obj_keycard/obj_keycard.yy",},"propertyId":{"name":"sprite_light","path":"objects/obj_keycard/obj_keycard.yy",},"resource":{"name":"spr_keycard_black","path":"sprites/spr_keycard_black/spr_keycard_black.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_keycard_black",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",

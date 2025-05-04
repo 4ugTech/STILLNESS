@@ -20,7 +20,7 @@ if (instance_exists(obj_player) && obj_player.flashlight_on) {
 }
         
 if (dist <= interaction_radius && keyboard_check_pressed(ord("E"))) {
-    // Add battery to inventory
+    // Add to inventory
     if (instance_exists(obj_inventory)) {
         if (obj_inventory.add_item(ItemType.BATTERY)) {
             // Mark as collected in global map

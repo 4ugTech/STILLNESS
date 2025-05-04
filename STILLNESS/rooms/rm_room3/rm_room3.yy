@@ -12,6 +12,7 @@
     {"name":"inst_86BB4C6","path":"rooms/rm_room3/rm_room3.yy",},
     {"name":"inst_26877F22","path":"rooms/rm_room3/rm_room3.yy",},
     {"name":"inst_27AC4A58","path":"rooms/rm_room3/rm_room3.yy",},
+    {"name":"inst_58D31C0A","path":"rooms/rm_room3/rm_room3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,6 +33,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"propertyId":{"name":"note_title","path":"objects/obj_note/obj_note.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Patient #47 Report",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":279.0,"y":714.0,},
         {"$GMRInstance":"v2","%Name":"inst_27AC4A58","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_27AC4A58","objectId":{"name":"obj_keycard_yellow","path":"objects/obj_keycard_yellow/obj_keycard_yellow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-45.96987,"scaleX":0.3,"scaleY":0.3,"x":344.0,"y":695.0,},
+        {"$GMRInstance":"v2","%Name":"inst_58D31C0A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58D31C0A","objectId":{"name":"obj_battery","path":"objects/obj_battery/obj_battery.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":315.39365,"y":924.0,},
       ],"layers":[],"name":"instances_dark","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_lab1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_lab1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
           -169,-2147483648,-5,0,-2,-2147483648,-7,0,-106,-2147483648,-14,0,1,-2147483648,-5,0,-52,-2147483648,
