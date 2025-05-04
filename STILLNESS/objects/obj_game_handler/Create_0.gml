@@ -14,7 +14,13 @@ shake_time = 0
 shake_magnitude = 0
 shake_fade = 0.25
 
-// Initialize collected items tracking
-if (!variable_global_exists("collected_items")) {
-    global.collected_items = ds_map_create();
+// Clean up any existing data structures
+if (variable_global_exists("collected_items") && ds_exists(global.collected_items, ds_type_map)) {
+    ds_map_destroy(global.collected_items);
 }
+global.collected_items = ds_map_create();
+
+if (variable_global_exists("opened_doors") && ds_exists(global.opened_doors, ds_type_map)) {
+    ds_map_destroy(global.opened_doors);
+}
+global.opened_doors = ds_map_create();

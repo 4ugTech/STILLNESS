@@ -6,6 +6,11 @@ if(instance_exists(obj_player))
 	if (!variable_global_exists("opened_doors")) {
 	    global.opened_doors = ds_map_create();
 	}
+	
+	// Check if the map exists before trying to use it
+	if (!ds_exists(global.opened_doors, ds_type_map)) {
+	    global.opened_doors = ds_map_create();
+	}
 
 	// Create a unique ID for this door based on room and door location
 	var door_id = string(room) + "_to_" + string(next_room);
@@ -15,7 +20,9 @@ if(instance_exists(obj_player))
 	    var keycard_used = ItemType.NONE;
     
 	    // Check if door was previously opened first
-	    if (ds_map_exists(global.opened_doors, door_id) && ds_map_find_value(global.opened_doors, door_id) == true) {
+	    if (ds_exists(global.opened_doors, ds_type_map) && 
+	        ds_map_exists(global.opened_doors, door_id) && 
+	        ds_map_find_value(global.opened_doors, door_id) == true) {
 	        can_open = true;
 	    }
 	    // Otherwise check access requirements
@@ -149,7 +156,9 @@ if(instance_exists(obj_player))
 	    var door_text = "Press E to open";
     
 	    // If the door was previously opened, it's always "Press E to open"
-	    if (!ds_map_exists(global.opened_doors, door_id) || ds_map_find_value(global.opened_doors, door_id) != true) {
+	    if (!ds_exists(global.opened_doors, ds_type_map) || 
+	        !ds_map_exists(global.opened_doors, door_id) || 
+	        ds_map_find_value(global.opened_doors, door_id) != true) {
 	        // Only check for locks if the door hasn't been opened before
 	        if (room == rm_spawn && next_room == rm_hallway) {
 	            if (!obj_player.has_spawn_key && !(instance_exists(obj_inventory) && obj_inventory.has_item(ItemType.KEY))) {
@@ -186,4 +195,3 @@ if(instance_exists(obj_player))
 	    draw_set_halign(fa_left);
 	}
 }
-
