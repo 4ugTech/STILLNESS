@@ -1,11 +1,11 @@
 if (global.show_hud) {
 	// Update UI properties on each draw to ensure correct positioning
-	// Position inventory in bottom left corner with some margin
+	// Position inventory in top right corner with some margin
 	var margin = 20;
-	slot_start_x = margin;
-	slot_y = display_get_gui_height() - slot_height - margin;
+	slot_start_x = display_get_gui_width() - ((slot_width + slot_padding) * array_length(inventory)) - margin;
+	slot_y = margin;
 
-	// Draw the inventory UI at the bottom of the screen
+	// Draw the inventory UI at the top right of the screen
 
 	// Draw background for all slots
 	for (var i = 0; i < array_length(inventory); i++) {
@@ -71,13 +71,12 @@ if (global.show_hud) {
 	    var item_desc = item_info[2];
 	    var quantity = ds_map_find_value(item_quantities, selected_item);
     
-	    // Draw name and description above the inventory
+	    // Draw name and description below the inventory
 	    draw_set_color(c_white);
-	    draw_set_halign(fa_left);
-	    draw_text(slot_start_x, slot_y - 40, item_name + " (" + string(quantity) + ")");
-	    draw_set_halign(fa_left);
+	    draw_set_halign(fa_right);
+	    draw_text(display_get_gui_width() - margin, slot_y + slot_height + 10, item_name + " (" + string(quantity) + ")");
+	    draw_set_halign(fa_right);
 	    draw_set_valign(fa_top);
-	    draw_text(slot_start_x, slot_y - 20, item_desc);
+	    draw_text(display_get_gui_width() - margin, slot_y + slot_height + 30, item_desc);
 	}
 }
-

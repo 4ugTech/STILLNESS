@@ -40,8 +40,8 @@ item_properties = ds_map_create();
 item_properties[? ItemType.NONE] = ["Empty", -1, "Empty slot"];
 item_properties[? ItemType.KEY] = ["Keycard", spr_key, "A keycard that opens doors"];
 item_properties[? ItemType.FLASHLIGHT] = ["Flashlight", spr_flashlight, "Helps you see in the dark"];
-item_properties[? ItemType.BATTERY] = ["Battery", spr_battery, "Recharges your flashlight"];
-item_properties[? ItemType.SYRINGE] = ["Adrenaline", spr_syringe, "Instantly restores stamina"];
+item_properties[? ItemType.BATTERY] = ["Battery", spr_battery, "Recharges your flashlight (Press Q to use)"];
+item_properties[? ItemType.SYRINGE] = ["Adrenaline", spr_syringe, "Instantly restores stamina (Press Q to use)"];
 item_properties[? ItemType.KEY_GREEN] = ["Green Keycard", spr_keycard_green, "Access to North West Wing"];
 item_properties[? ItemType.KEY_RED] = ["Red Keycard", spr_keycard_red, "Access to South West Wing"];
 item_properties[? ItemType.KEY_YELLOW] = ["Yellow Keycard", spr_keycard_yellow, "Access to South East Wing "];
@@ -54,10 +54,10 @@ selected_slot = 0;
 slot_width = 64;
 slot_height = 64;
 slot_padding = 10;
-// Bottom left positioning (actual position set in Draw GUI event)
+// CHANGED: Position in the top right of the screen
 var margin = 20;
-slot_start_x = margin;
-slot_y = room_height - slot_height - margin;
+slot_start_x = display_get_gui_width() - ((slot_width + slot_padding) * array_length(inventory)) - margin;
+slot_y = margin;
 
 // Add item to inventory
 // Returns true if added successfully, false if inventory is full
