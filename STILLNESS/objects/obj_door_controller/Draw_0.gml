@@ -15,8 +15,12 @@ if(instance_exists(obj_player))
 	    // Check which keycard is needed for this door
 	    if (room == rm_spawn && next_room == rm_hallway) {
 	        can_open = obj_player.has_spawn_key || (instance_exists(obj_inventory) && obj_inventory.has_item(ItemType.KEY));
-	        keycard_needed = "Keycard";
+	        keycard_needed = "Key";
 	    } 
+		if (room == Room1 && next_room == rm_main_menu) {
+	        can_open = obj_player.has_spawn_key || (instance_exists(obj_inventory) && obj_inventory.has_item(ItemType.KEY));
+	        keycard_needed = "Key";
+	    }
 	    else if (room == rm_hallway && next_room == rm_spawn) {
 	        can_open = true;
 	    }

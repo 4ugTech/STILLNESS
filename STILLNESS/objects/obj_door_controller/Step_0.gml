@@ -71,6 +71,10 @@ if(instance_exists(obj_player))
 	            can_open = instance_exists(obj_inventory) && obj_inventory.has_item(ItemType.KEY_BLACK);
 	            if (can_open) keycard_used = ItemType.KEY_BLACK;
 	        }
+            // NEW CONDITION: Room1 to main menu - always open
+            else if (room == Room1 && next_room == rm_main_menu) {
+                can_open = true;
+            }
 	    }
     
 	    // If door can be opened, consume the keycard if needed and proceed
@@ -139,9 +143,22 @@ if(instance_exists(obj_player))
 	        else if (room == rm_hallway && next_room == rm_win_screen) {
 	            global.show_hud = false;
 	            global.should_destroy_player = true;
-            
-	            room_goto(next_room);
+                room_goto(next_room);
 	        }
+            
+            // NEW CONDITION: Room1 to main menu
+            else if (room == Room1 && next_room == rm_main_menu) {
+                // Reset any necessary variables
+                global.show_hud = false;
+                
+                // Clean up any persistent objects if needed
+                if (instance_exists(obj_player)) {
+                    instance_destroy(obj_player);
+                }
+                
+                // Go to main menu
+                room_goto(rm_main_menu);
+            }
 	    } else {
 	        // Door is locked, play locked sound effect
 	        if (audio_exists(snd_door_locked)) {
@@ -185,6 +202,12 @@ if(instance_exists(obj_player))
 	                door_text = "Locked! Needs Black Keycard";
 	            }
 	        }
+            // NEW CONDITION: Room1 to main menu
+            else if (room == Room1 && next_room == rm_main_menu) {
+                if (!obj_player.has_spawn_key && !(instance_exists(obj_inventory) && obj_inventory.has_item(ItemType.KEY))) {
+	                door_text = "Locked! Needs Key";
+	            }
+            }
 	    }
     
 	    // Draw the prompt
