@@ -31,6 +31,7 @@ if (global.show_hud) {
 	// Label
 	draw_set_font(font_buttons);
 	draw_set_color(c_white);
+	draw_set_halign(fa_left); // Explicitly set alignment to left before drawing text
 	draw_text(x_pos, y_pos - 20, "STAMINA");
 
 	// Draw exhausted indicator if player is exhausted
@@ -69,6 +70,7 @@ if (global.show_hud) {
 	    // Label
 	    draw_set_font(font_buttons);
 	    draw_set_color(c_white);
+	    draw_set_halign(fa_left); // Explicitly set alignment to left before drawing text
 	    draw_text(x_pos, y_pos - 20, "BATTERY");
     
 	    // Show flashlight status
@@ -77,4 +79,3 @@ if (global.show_hud) {
 	    draw_text(x_pos + bar_width + 10, y_pos + 20, "Press F to toggle");
 	}
 }
-

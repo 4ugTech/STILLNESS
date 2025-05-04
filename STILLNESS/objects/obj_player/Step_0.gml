@@ -136,7 +136,3 @@ else
 {
 	speed = 0	
 }
-
-if (keyboard_check(vk_alt) && keyboard_check_pressed(ord("S"))) {
-	stamina = max_stamina
-}

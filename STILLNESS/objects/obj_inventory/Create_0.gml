@@ -38,7 +38,7 @@ item_properties = ds_map_create();
 // Define item properties
 // Format: [display_name, sprite_index, description]
 item_properties[? ItemType.NONE] = ["Empty", -1, "Empty slot"];
-item_properties[? ItemType.KEY] = ["Keycard", spr_key, "A keycard that opens doors"];
+item_properties[? ItemType.KEY] = ["Key", spr_key, "A key that opens the hallway door"];
 item_properties[? ItemType.FLASHLIGHT] = ["Flashlight", spr_flashlight, "Helps you see in the dark"];
 item_properties[? ItemType.BATTERY] = ["Battery", spr_battery, "Recharges your flashlight (Press Q to use)"];
 item_properties[? ItemType.SYRINGE] = ["Adrenaline", spr_syringe, "Instantly restores stamina (Press Q to use)"];
